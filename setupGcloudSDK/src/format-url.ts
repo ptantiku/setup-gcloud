@@ -30,6 +30,9 @@ function formatReleaseURL(os: string, arch: string, version: string): string {
   if (arch == 'x64') {
     arch = 'x86_64';
   }
+  if (arch == 'arm64') {
+    arch = 'arm';
+  }
 
   let objectName: string;
   switch (os) {

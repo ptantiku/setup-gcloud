@@ -5313,6 +5313,9 @@ function formatReleaseURL(os, arch, version) {
     if (arch == 'x64') {
         arch = 'x86_64';
     }
+    if (arch == 'arm64') {
+        arch = 'arm';
+    }
     let objectName;
     switch (os) {
         case 'linux':
